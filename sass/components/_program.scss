@@ -1,0 +1,28 @@
+.program-content {
+  @include SectionPaddings;
+}
+
+.program .list {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    position: relative;
+  }
+}
+
+.program b {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 370px;
+  padding: 27px 0;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}

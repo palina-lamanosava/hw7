@@ -1,0 +1,36 @@
+.clients-content {
+  @include SectionPaddings;
+}
+
+.clients .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients .list a {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  @include Transition(border);
+}
+.clients-logo {
+  fill: #afb1b8;
+
+  @include Transition(fill);
+}
+
+.clients .list .item:hover a,
+.clients .list .item:focus a {
+  border: 1px solid $accent-color;
+}
+
+.clients .list .item:hover svg,
+.clients .list .item:focus svg {
+  fill: $accent-color;
+}

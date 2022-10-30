@@ -1,0 +1,10 @@
+@mixin SectionPaddings($type: 94px) {
+  padding-top: 94px;
+  padding-bottom: $type;
+}
+
+@mixin Transition($mode) {
+  transition-property: $mode;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

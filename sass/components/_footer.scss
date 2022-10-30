@@ -1,0 +1,108 @@
+#footer {
+  color: $primary-background-color;
+  background-color: #2f303a;
+}
+
+footer .container {
+  display: flex;
+  align-items: baseline;
+  padding: 60px 15px;
+}
+
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  width: 231px;
+}
+
+address > a {
+  display: block;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+#footer b {
+  margin: 0 0 20px;
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+footer .social {
+  margin-left: 69px;
+  margin-right: 94px;
+}
+
+.social .social-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+#footer .social-link {
+  fill: $primary-background-color;
+}
+#footer .social-item a {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  @include Transition(background-color);
+}
+
+#footer .social-item:hover a,
+#footer .social-item:focus a {
+  background-color: $accent-color;
+}
+
+#footer form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#footer input {
+  width: 358px;
+  min-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 30%);
+  border-radius: 4px;
+  margin-right: 12px;
+
+  font-family: inherit;
+  background-color: inherit;
+  color: $primary-background-color;
+}
+
+.box-input {
+  position: relative;
+}
+
+.box-input > label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  @include Transition(transform);
+}
+
+.box-input > input:focus + label,
+.box-input > input:not(:placeholder-shown) + label {
+  transform: translate(-70px, -50%);
+}
+.send-icon {
+  fill: $primary-background-color;
+  vertical-align: middle;
+  margin-left: 10px;
+}

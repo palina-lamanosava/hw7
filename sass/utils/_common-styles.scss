@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  width: 1600px;
+  margin: auto;
+}
+
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+
+  background-color: var(--primary-backgroud-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin: 0 0 50px 0;
+}
+
+img {
+  display: block;
+}
+
+.main-button {
+  display: block;
+  width: 200px;
+  min-height: 50px;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: $accent-color;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  @include Transition("background-color, border");
+}
+
+.main-button:hover {
+  cursor: pointer;
+
+  background-color: #188ce8;
+  border: 2px solid #188ce8;
+}

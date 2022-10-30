@@ -1,0 +1,40 @@
+.projects-content {
+  @include SectionPaddings;
+}
+#projects {
+  border-top: 1px solid #ececec;
+}
+#projects h2 {
+  display: none;
+}
+
+.projects-filter-list {
+  display: flex;
+  width: 611px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.projects-filter-list button {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  color: $primary-text-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  @include Transition("background-color, color");
+}
+
+.projects-filter-list button:hover {
+  background-color: $accent-color;
+  color: $primary-background-color;
+  cursor: pointer;
+}

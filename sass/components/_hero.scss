@@ -1,0 +1,26 @@
+.hero-container {
+  height: 600px;
+
+  text-align: center;
+  background-color: $secondary-text-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header.jpg);
+
+  h1 {
+    display: inline-block;
+    margin: 200px auto 30px;
+    width: 696px;
+
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
